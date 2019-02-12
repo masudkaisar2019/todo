@@ -1,0 +1,36 @@
+
+  <h1>{{title}}</h1>
+
+  <div class="mainTodo">
+    <input type="text" placeholder="Enter Your todo"  #newTodo>
+    <button (click)= "addTodo($event); newTodo.value = '' " >Add</button>
+
+    <table>
+      <tr>
+        <th>label</th>
+        <th>Quantity</th>
+        <th>Done</th>
+        <th>Action</th>
+      </tr>
+
+      <tr *ngFor = "let todo of todos">
+        <td>{{todo.label}}</td>
+        <td>{{todo.quantity}}</td>
+        <td>{{todo.done ? '&#10003;' : '&#10005;'}}</td>
+        <td>
+          <button (click)="deleteTodo(todo)" ng-show="myVar">Delete</button>
+        </td>
+
+      </tr>
+    </table>
+    <!-- <p *ngIf="todos.length > 0">
+      <span><strong>{{todos.length}}</strong>{{todos.length == 1 ? 'item' : 'items'}} left</span>
+    </p> -->
+    <p *ngIf="todos.length == 0">
+      No more items left
+    </p>
+
+  </div>
+
+
+

@@ -1,0 +1,34 @@
+.mainTodo{
+  background-color:rgb(224, 249, 255);
+  height: 300px;
+  width: 340px;
+  margin-left: 50px;
+}
+table{
+  padding: 20px;
+}
+th{
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+td{
+  background-color: rgb(21, 47, 196);
+  color: white;
+  padding: 10px;
+}
+input{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+}
+button{
+  height: 40px;
+  width: 80px;
+  background-color: brown;
+  color: white;
+}
+/* p{
+  visibility: hidden;
+} */
